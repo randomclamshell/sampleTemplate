@@ -1,30 +1,34 @@
 import React from 'react'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
-
+import Fade from 'react-fade-in'
 import Zoom from 'react-reveal/Zoom';
 
 const center = {
      textAlign: 'center',
-     fontSize: '90px',
-     color: 'white'
+     fontSize: '6vh',
+     padding: '8vh'
 }
 
 const titleStyle = {
      fontFamily: 'Roboto slab',
-     fontSize: '170px',
-     padding: '10px',
-     color: '#6de808'
+     fontSize: '10vh',
+     color: 'black',
+     textAlign: 'center',
+     paddingLeft: '2vh',
+     paddingTop: '5vh'
 }
 
 const colStyle = {
      fontFamily: 'Lexend Peta',
-     fontSize: '30px',
-     color: 'white'
+     fontSize: '3vh',
+     color: '#feb300',
+     textAlign: 'left'
 }
 
 const em = {
-     color: 'red'
+     color: '#ff5e6c',
+     width: '10%'
 }
 
 
@@ -32,28 +36,32 @@ const em = {
 function HiringArea() {
      return (
           <div>
+               
 <Row>
-  <Col >
+
+  <Col sm={6}>
   
   <h1 style={titleStyle}>Hiring..</h1>
-
+  
   </Col>
-  <Zoom>
-  <Col style={colStyle}>
-<p> is a <span style={em}>puzzle.</span></p>
+
+<Zoom>
+<Col style={colStyle}>
+  <p> is a <span style={em}>puzzle.</span></p>
 <p> is a <span style={em}>long</span> process.</p>
 <p> <span style={em}>for fit is even harder.</span></p>
 <p> based on a resume is <span style={em}>flawed</span></p>
-
-<p><span style={em}>doesn't account for future potential.</span></p>
-
 </Col>
 </Zoom>
+
+
+
 </Row>
-<br /> <br />
+<Row>
 <Zoom>
-<h1 style={center}>So let's skip that resume ;)</h1>
+<h1 style={center}>So let's skip that resume!</h1>
 </Zoom>
+</Row>
           </div>
      )
 }

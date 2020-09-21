@@ -5,26 +5,35 @@ import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
 import Roll from 'react-reveal/Roll';
 
+
 const titleStyle = {
-          textAlign: 'left',
+          textAlign: 'center',
           padding: '40px',
-          fontSize: '70px',
+          fontSize: '4vh',
           fontFamily: 'Lexend Peta',
-          color: '#6de808'
+          color: '#ff5e6c'
 }
 
 const bodyStyle = {
-     fontSize: '30px',
+     fontSize: '2vw',
      fontFamily: 'Roboto slab',
-     color: 'white'
+     color: '#feb300'
+     }
+
+     const imgStyle = {
+          height: '30vw',
+          width: 'auto',
+         paddingBottom: '5vh',
+     
      }
 
 
 const center = {
+    
+     color: '#ffaaab',
+     fontSize: '12vh, 10vw',
      textAlign: 'center',
-     color: 'white',
-     fontSize: '40px',
-     padding: '40px'
+    
 }
 
 
@@ -33,26 +42,25 @@ function Youneed(){
 
           <div>
 
-<br /><br /><br /><br /><br />
 
 
-<h1 style={titleStyle}>You need a passionate team player who can:
+<h1 style={titleStyle}>You need someone who can:
 </h1>
 <Fade>
-<br /><br /><br /><br />
+
 <Row style={bodyStyle}>
 <Col>
 <Roll top>
-<h1>Build teams as they scale</h1>
-<img src='https://placekitten.com/g/500/300'></img>
+<h3>Build teams as they scale</h3>
+<img style={imgStyle} src='https://cdn.abcotvs.com/dip/images/5290492_050819-wtvd-meth-in-legos-main-vid.jpg?w=800&r=16%3A9'></img>
 </Roll>
 <br />
 <br />
 </Col>
 <Col>
 <Roll bottom>
-<h1>Streamline recruiting processes</h1>
-<img src='https://placekitten.com/g/500/300'></img>
+<h3>Streamline recruiting processes</h3>
+<img style={imgStyle} src='https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/UD7CEz6/videoblocks-animation-high-speed-rail_razk5xfkm_thumbnail-1080_01.png'></img>
 </Roll>
 <br /><br />
 </Col>
@@ -61,20 +69,21 @@ function Youneed(){
 <Row style={bodyStyle}>
   <Col>
   <Roll left>
-<h1>Help build a culture of inclusion and diversity</h1>
-<img src='https://placekitten.com/g/500/300'></img>
+<h3>Help build a culture of inclusion and diversity</h3>
+<img style={imgStyle} src='https://i.ytimg.com/vi/hxSfYMvBU9E/maxresdefault.jpg'></img>
 </Roll>
 <br /><br />
 </Col>
 <Col>
 <Roll right>
-<h1>Draw in and retain good talent</h1>
-<img src='https://placekitten.com/g/500/300'></img>
+<h3>Draw in and retain quality talent</h3>
+<img style={imgStyle} src='https://wp-media.petersons.com/blog/wp-content/uploads/2017/12/10124351/luca-bravo-217276-unsplash.jpg'></img>
 </Roll>
 <br /><br />
 </Col>
 </Row>
-<Slide><h1 style={center}>Bottom line, someone who does with they love, and loves what they do</h1></Slide>
+
+
 </Fade>
           </div>
      )

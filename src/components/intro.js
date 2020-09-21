@@ -3,58 +3,66 @@ import React from 'react'
 import Slide from 'react-reveal/Slide';
 import FadeIn from 'react-fade-in';
 
-import Typewriter from 'typewriter-effect';
+
+import Container from 'react-bootstrap/Container'
 
 const introStyle = {
      textAlign: 'center',
-     fontSize: '50px',
-     paddingBottom: '50px',
+     fontSize: 'auto',
+     paddingTop: '40px',
      fontFamily: 'Lexend Peta',
+     color: 'black'
 }
 
 const btn = {
      textAlign: 'center',
-     color: 'white',
      padding: '15px',
-     color: 'white',
-     fontSize: '50px'
+     color: 'black',
+     fontSize: '6vh'
      
 }
 
 const headline = {
      textAlign: 'center',
-     padding: '40px',
-     fontSize: '80px',
+     fontSize: 'auto',
+paddingTop: '25px',
      fontFamily: 'Lexend Peta',
-     color: 'red'
+     color: 'black',
+     fontSize: '5vh'
 }
 
 const red = {
-     color: 'red',
-     fontSize: '40',
+     color: '#ff5e6c',
    
 }
 
+
+
+
 function Intro() {
      return(
-
+<Container fluid>
           <div>
              
-<div>
 
 
-   
+          <div>
 
-             <h1 style={headline}>My dream is to BLANK BLANK BLANK and help build something great.</h1>
+<h1 style={headline}>My name is <span style={red}>Khalid</span> and  I am putting the <span style={red}>human touch</span> back into the recruiting world. <span style={red}>One candidate at a time</span></h1>
 
-             </div>
-             <br /><br /><br /><br /><br /><br /><br />    
-             <FadeIn delay={1000}>
+</div>
+
+               
+
+             <div>
+
+             <br /><br /><br />
+             <FadeIn delay={1500}>
 <Slide bottom>
 <h1 style={introStyle}>Now, you might be wondering <span style={red}>what's the point of this?</span></h1>
 </Slide>
 </FadeIn>
-
+</div>
 
 <br />
 <FadeIn delay={2000}>
@@ -66,7 +74,17 @@ function Intro() {
 
 <br /><br />
 
+<div>
+ 
+  </div>
+
           </div>
+
+
+<div>
+    
+  </div>
+          </Container>
      )
 }
 
